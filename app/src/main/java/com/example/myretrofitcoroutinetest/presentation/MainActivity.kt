@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 .collect{binding.txtRes.text = it}
 
         }
-        viewModel.showName()
+        viewModel.showName(1)
 
 
 

@@ -26,8 +26,8 @@ class MyViewModel : ViewModel() {
     var nameUser: SharedFlow<String> = _nameUserMutable.asSharedFlow()
 
 
-    fun showName() {
-        _nameUserMutable.tryEmit(helper.showUserName(2))
+    fun showName(id: Int) {
+        _nameUserMutable.tryEmit(helper.showUserName(id))
     }
 
 
